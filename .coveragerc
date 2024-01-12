@@ -6,12 +6,12 @@ source =
 [run]
 branch = true
 source =
-    sampleproject
+    bla5t
 parallel = true
 
 [report]
 show_missing = true
 precision = 2
 omit = *migrations*
-exclude_lines = 
+exclude_lines =
     if __name__ == .__main__.:

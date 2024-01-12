@@ -9,26 +9,27 @@ import os
 import sys
 from pathlib import Path
 
+
 folder = Path(__file__).resolve().parents[1]
-changelog = Path(folder, 'CHANGELOG.rst')
+changelog = Path(folder, "CHANGELOG.rst")
 
 
 class ChangelogError(Exception):
     pass
 
 
-with open(changelog, 'r') as fin:
+with open(changelog, "r") as fin:
     for line in fin:
-        if line.startswith('v'):
+        if line.startswith("v"):
             msg = [
-                '',
-                'CHANGELOG.rst not updated:',
-                'Please add a summary of your additions as described in:',
-                'https://python-project-skeleton.readthedocs.io'
-                '/en/latest/contributing.html#update-changelog.',
-                '',
-                ]
+                "",
+                "CHANGELOG.rst not updated:",
+                "Please add a summary of your additions as described in:",
+                "https://bla5t.readthedocs.io",
+                "/en/latest/contributing.html#update-changelog.",
+                "",
+            ]
             sys.exit(os.linesep.join(msg))
 
-        elif line.startswith('*'):
+        elif line.startswith("*"):
             break

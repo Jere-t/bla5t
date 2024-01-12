@@ -1,6 +1,7 @@
 """Performs general tests."""
 import amodule
-from sampleproject.libs import samplemodule as SM
+
+from bla5t.libs import samplemodule as SM
 
 
 def test_amodule():

@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "bla5t"
+version = "0.1.0"
+description = "Bla5t card game"
+authors = ["Jeremy Maret <jeremy.maret@gmail.com>"]
+readme = "README.rst"
+homepage = "https://github.com/jere-t/bla5t"
+repository = "https://github.com/jere-t/bla5t"
+keywords = ["bla5t"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic-settings = "^2.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+flake8 = "^7.0.0"
+pre-commit = "^3.6.0"
+pre-commit-hooks = "^4.5.0"
+isort = "^5.13.2"
+
+[tool.poetry.scripts]
+bla5t = "bla5t.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

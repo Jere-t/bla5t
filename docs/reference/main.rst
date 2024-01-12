@@ -1,10 +1,9 @@
-sampleproject
+bla5t
 =============
 
 .. testsetup::
 
-    from sampleproject import *
+    from bla5t import *
 
-.. automodule:: sampleproject
+.. automodule:: bla5t
     :members:
-
