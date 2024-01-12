@@ -35,15 +35,15 @@ long_description = '{}\n{}'.format(
     )
 
 setup(
-    name='jmct-sampleproject',
-    version='0.11.3',
-    description='A skeleton template for Python projects.',
+    name='jere-t-bla5t',
+    version='0.1.0',
+    description='Bla5t game in python.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
     license='MIT License',
-    author='Joao Miguel Correia Teixeira',
-    author_email='joaomcteixeira@gmail.com',
-    url='https://github.com/joaomcteixeira/python-project-skeleton',
+    author='Jeremy Maret',
+    author_email='jeremy.maret@gmail.com',
+    url='https://github.com/jere-t/bla5t',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(i))[0] for i in glob("src/*.py")],
@@ -67,16 +67,15 @@ setup(
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         ],
     project_urls={
-        'webpage': 'https://github.com/joaomcteixeira/python-project-skeleton',
-        'Documentation': 'https://python-project-skeleton.readthedocs.io/en/latest/',
-        'Changelog': 'https://github.com/joaomcteixeira/python-project-skeleton/blob/master/CHANGELOG.rst',
-        'Issue Tracker': 'https://github.com/joaomcteixeira/python-project-skeleton/issues',
-        'Discussion Forum': 'https://github.com/joaomcteixeira/python-project-skeleton/discussions',
+        'webpage': 'https://github.com/jere-t/bla5t',
+        'Documentation': 'https://bla5t.readthedocs.io/en/latest/',
+        'Changelog': 'https://github.com/jere-t/bla5t/blob/master/CHANGELOG.rst',
+        'Issue Tracker': 'https://github.com/jere-t/bla5t/issues',
+        'Discussion Forum': 'https://github.com/jere-t/bla5t/discussions',
         },
     keywords=[
-        'ci', 'continuous-integration', 'project-template',
-        'project-skeleton', 'sample-project',
-        # eg: 'keyword1', 'keyword2', 'keyword3',
+        'ci', 'continuous-integration', 'card-game',
+        'python', 'bla5t',
         ],
     python_requires='>=3.7, <4',
     install_requires=[
@@ -94,7 +93,7 @@ setup(
         ],
     entry_points={
         'console_scripts': [
-            'samplecli1= sampleproject.cli_int1:main',
+            'samplecli1= bla5t.cli_int1:main',
             ]
         #
         },
